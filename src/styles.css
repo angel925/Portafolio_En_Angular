@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+
+.animated.slower {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+  }
+
+
+@media (prefers-reduced-motion) {
+    .animated.animated.slower {
+      -webkit-animation: unset !important;
+      animation: unset !important;
+      -webkit-transition: none !important;
+      transition: none !important;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+
+to {
+    opacity: 1;
+}
+}
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+}
