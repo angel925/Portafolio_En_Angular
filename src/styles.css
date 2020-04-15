@@ -1,7 +1,11 @@
+/*SVG Loading*/
+svg path,
+svg rect{
+  fill: black;
+}
 
 
-
-
+/*Animacion animated  */
 .animated.slower {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
